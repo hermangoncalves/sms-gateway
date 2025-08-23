@@ -1,4 +1,4 @@
-APP_NAME=caddysms
+APP_NAME=smsgateway
 
 build:
 	@go build -o bin/$(APP_NAME) ./client/cmd/main.go

@@ -63,7 +63,7 @@ func main() {
 		WriteTimeout: 15 * time.Second,
 	}
 
-	log.Printf("[INFO] CaddySMS v0.1 listening on %s", cfg.Listen)
+	log.Printf("[INFO] SMSGateway v0.1 listening on %s", cfg.Listen)
 	if err := server.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 		log.Fatalf("server error: %v", err)
 	}
